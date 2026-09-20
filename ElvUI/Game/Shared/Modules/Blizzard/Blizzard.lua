@@ -140,9 +140,13 @@ function BL:ObjectiveTracker_AutoHideOnShow()
 	end
 end
 
-do
-	local AutoHider
+-- Tom: BYPASS BROKEN BLIZZARD DRIVER. Comment out do and end and local autohider.
+--do
+	--local AutoHider
 	function BL:ObjectiveTracker_AutoHide()
+		-- Tom: BYPASS BROKEN BLIZZARD DRIVER by returning function blank
+		return
+--[[
 		if E.OtherAddons.BigWigs or E.OtherAddons.DBM then return end
 
 		local tracker = ((E.Wrath or E.Mists) and _G.WatchFrame) or _G.ObjectiveTrackerFrame
@@ -161,8 +165,9 @@ do
 			UnregisterStateDriver(AutoHider, 'objectiveHider')
 			BL:ObjectiveTracker_AutoHideOnShow() -- reshow it when needed
 		end
+]]
 	end
-end
+--end
 
 function BL:ADDON_LOADED(_, addon)
 	if addon == 'Blizzard_GuildBankUI' then

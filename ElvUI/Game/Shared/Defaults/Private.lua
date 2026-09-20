@@ -195,6 +195,7 @@ V.tooltip = {
 }
 
 V.unitframe = {
+	-- Tom: disable Unitframe until Blizzard fix.
 	enable = true,
 	disabledBlizzardFrames = {
 		castbar = true,
@@ -209,7 +210,8 @@ V.unitframe = {
 }
 
 V.actionbar = {
-	enable = true,
+	-- Tom: disable Actionbar until Blizzard fix.
+	enable = false,
 	masque = {
 		actionbars = false,
 		petBar = false,

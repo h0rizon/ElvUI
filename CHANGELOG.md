@@ -1,3 +1,8 @@
+### Tom Edit
+- ElvUI/Game/Shared/Defaults/Private.lua: disabled action bars. Apparently this is broken upstream and Blizz needs to fix.
+- ElvUI/Game/Shared/Modules/Blizzard/Blizzard.lua: Bypass broken Blizz driver for ObjectiveTracker_AutoHide
+
+
 ### Version 15.26 [ August 29th 2026 ]
 *   Item level display for enchants will appear cleaner (regardless of abbreviate setting).
 *   Chat tabs had an unneeded workaround that was causing trouble, removed it.
